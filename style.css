@@ -153,7 +153,7 @@ footer p {
 /* -------  Media Query ------- */
 /* When a web browser is larger than 768 pixels,
    apply these rules. */
-   @media all and (min-width: 768px) {
+   @media all and (min-width: 769px) {
     header {
       display: flex;
       justify-content: space-between;
