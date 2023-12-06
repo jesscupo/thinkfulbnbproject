@@ -43,19 +43,22 @@ main img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items:center;
 }
 
 
 .item {
   align-self: stretch;
   flex: 1;
-  margin: 0px;
+  margin: 10px;
   align-self: center;
 }
 
-
+/*item to take up 2x flex */
 .item-double {
   flex: 2;
+  margin: 10px;
+
 }
 
 
@@ -112,21 +115,25 @@ form {
   flex-direction: column;
   border: 2px solid #ff385c;
   padding: 10px;
+  justify-content: space-between;
 }
 
 form div {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin: 10px;
 }
 
 form label {
   font-weight: bold;
+  margin: 5px;
 }
 
 form select,
 form input {
-  margin-bottom: 20px;
-  width: 130px;
+  margin:5px;
+  padding: 5px;
+  width: 140px;
 }
 
 form button {
@@ -171,17 +178,28 @@ footer p {
 
     form {
       flex-direction: row;
+      align-items: center;
       justify-content: space-between;
     }
 
     form div {
+      margin: 0px;
+      display: flex;
       flex-direction: column;
     }
 
+/* reduce padding for larger screen view*/    
+
+    form select,
+    form input {
+    margin:0px;
+    padding: 0px;
+}
+
+/*limit size of button */
     form button {
-      max-width:75px;
       font-size: 18px;
-      padding: 5px;
+      max-width: 110px;
     }
 
     .group {
